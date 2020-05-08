@@ -358,7 +358,10 @@ template {
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
-  margin-right: 40px; }
+  margin-right: 40px;
+  transition: color 0.2s; }
+  .nav__item:hover {
+    color: #E3B873; }
 
 .phone {
   color: #E3B873; }
