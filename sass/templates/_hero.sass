@@ -35,6 +35,15 @@
     text-transform: uppercase
     text-decoration: none
     color: $light
+    &::after
+      content: ''
+      display: block
+      background: url('../img/arrow-down.svg') no-repeat center
+      width: 30px
+      height: 30px
+      border: solid 2px $primary
+      border-radius: 50%
+      margin-left: 12px
 .instagram
   display: flex
   justify-content: center
