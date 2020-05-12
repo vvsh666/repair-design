@@ -34,10 +34,12 @@
   .card
     &__text
       margin-left: 0
-    &__list
-      max-height: 151px
-      overflow: hidden
-      text-overflow: ellipsis
+    &__item
+      &:nth-child(n+8)
+        display: none
+      &--roll
+        &::after
+          content: ' ...'
   .design
     background-color: $dark
     &__heading

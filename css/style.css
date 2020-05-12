@@ -602,10 +602,10 @@ img {
     margin-bottom: 6.58rem; }
   .card__text {
     margin-left: 0; }
-  .card__list {
-    max-height: 151px;
-    overflow: hidden;
-    text-overflow: ellipsis; }
+  .card__item:nth-child(n+8) {
+    display: none; }
+  .card__item--roll::after {
+    content: ' ...'; }
   .design {
     background-color: #131313; }
     .design__heading {
