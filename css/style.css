@@ -413,7 +413,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 100px;
+  padding-top: 7.14rem;
   background: #131313 url("../img/hero-bg.jpg") no-repeat center/cover;
   height: 100vh;
   color: #ffffff; }
@@ -553,15 +553,17 @@ img {
   .title {
     max-width: 25rem;
     font-size: 1.92rem; }
-  .hero__text {
-    max-width: 26.75rem;
-    width: 93%;
-    font-size: 1.5rem; }
-  .hero__scroll-down {
-    display: none; }
-  .hero__button {
-    margin-bottom: 26px;
-    margin-right: 0; }
+  .hero {
+    padding-top: 5rem; }
+    .hero__text {
+      max-width: 26.75rem;
+      width: 93%;
+      font-size: 1.5rem; }
+    .hero__scroll-down {
+      display: none; }
+    .hero__button {
+      margin-bottom: 26px;
+      margin-right: 0; }
   .button {
     max-width: 31.25rem;
     width: 100%;
