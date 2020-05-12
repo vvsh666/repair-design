@@ -602,9 +602,9 @@ img {
     margin-bottom: 6.58rem; }
   .card__text {
     margin-left: 0; }
-  .card__item:nth-child(n+8) {
+  .card__list--roll .card__item:nth-child(n+8) {
     display: none; }
-  .card__item--roll::after {
+  .card__list--roll .card__item:nth-child(7)::after {
     content: ' ...'; }
   .design {
     background-color: #131313; }

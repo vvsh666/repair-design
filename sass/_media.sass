@@ -34,12 +34,15 @@
   .card
     &__text
       margin-left: 0
-    &__item
-      &:nth-child(n+8)
-        display: none
+    &__list
       &--roll
-        &::after
-          content: ' ...'
+        .card          
+          &__item
+            &:nth-child(n+8)
+              display: none
+            &:nth-child(7)
+              &::after
+                content: ' ...'
   .design
     background-color: $dark
     &__heading
