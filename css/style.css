@@ -379,6 +379,11 @@ img {
         background-color: #E3B873;
         margin: 0 10px;
         border-radius: 1px; }
+  .section-descr {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.43rem;
+    line-height: 1.35; }
 
 .header {
   position: fixed;
@@ -555,6 +560,17 @@ img {
   background-color: #E3B873;
   color: #ffffff;
   padding: 1.214rem 0; }
+
+.design__section-title {
+  margin-bottom: 1.3rem; }
+
+.design__section-descr {
+  max-width: 52.93rem;
+  margin-bottom: 3.3rem; }
+
+.design__pricetag {
+  padding-left: 2.357rem;
+  text-align: left; }
 
 @media screen and (max-width: 1300px) {
   html {
