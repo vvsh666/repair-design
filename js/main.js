@@ -17,12 +17,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
   });
 
+  document.addEventListener('click', function(event) {
+    console.log(event);
+    if (event.target.className == 'modal modal--visible') {
+      switchModal();
+    }
+  });
+
   closeBtn.addEventListener('click', switchModal);
-
-  
-
-
-
 
 });
 
