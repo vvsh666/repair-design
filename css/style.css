@@ -646,8 +646,9 @@ img {
     background: transparent url("../img/close.svg") no-repeat center;
     border: none;
     margin-top: 12px;
-    margin-right: 13px;
-    cursor: pointer; }
+    margin-right: 13px; }
+    .modal__close:hover {
+      cursor: pointer; }
   .modal__title {
     margin: 0;
     margin-bottom: 2rem;
