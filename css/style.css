@@ -752,6 +752,17 @@ img {
     max-width: 31.25rem;
     width: 100%;
     padding: 19px 0; }
+    .button-up {
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 3rem;
+      border: none;
+      border-radius: 0;
+      background-color: #131313;
+      box-shadow: none; }
+      .button-up:hover {
+        cursor: auto; }
   .section-title__heading {
     font-size: 1.83rem;
     margin-bottom: 1.2rem; }
