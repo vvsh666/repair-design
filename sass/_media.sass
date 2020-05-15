@@ -11,11 +11,11 @@
   .nav
     &__item
       margin-right: 1rem
+  .projects
+    &__col-40
+      padding-left: 0
 
 @media screen and ( max-width: 992px )
-  *
-    &:hover
-      cursor: auto
   .nav
     display: none
   .hero
@@ -26,6 +26,16 @@
   .card
     &__pricetag
       max-width: 90%
+  .projects
+    &__row
+      flex-direction: column
+      align-items: flex-start
+    &__col-40
+      max-width: 100%
+      margin-bottom: 2.6rem
+    &__col-60
+      max-width: 100%
+      align-self: center
 
 @media screen and ( max-width: 760px )
   .row
@@ -69,6 +79,7 @@
     font-size: 1.92rem
   .hero
     padding-top: 5rem
+    padding-bottom: 1rem
     &__text
       max-width: 26.75rem
       width: 93%
@@ -78,6 +89,8 @@
     &__button
       margin-bottom: 26px
       margin-right: 0
+    &::after
+      display: none
   .button
     max-width: 31.25rem
     width: 100%
@@ -102,6 +115,28 @@
       font-size: 1.25rem
       line-height: 1.4
       max-width: 90%
+  .projects
+    padding-top: 3rem
+    padding-bottom: 0
+    &__title
+      margin-bottom: 3.1rem
+    &__heading
+      font-size: 1.83rem
+      margin-bottom: 2rem
+    &__text
+      max-width: 95%
+      font-size: 1.17rem
+  .swiper
+    &-wrapper
+      margin-bottom: 2.1rem
+    &-slide
+      &__text
+        margin-bottom: 2.25rem
+      &__heading
+        font-size: 1.16rem
+        margin-bottom: 0.9rem
+      &__value
+        font-size: 1.17rem
   .types
     &__section-title
       margin-bottom: 3.3rem
