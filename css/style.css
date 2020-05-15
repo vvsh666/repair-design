@@ -911,6 +911,8 @@ img {
     .projects__heading {
       font-size: 1.83rem;
       margin-bottom: 2rem; }
+    .projects__word::after {
+      display: none; }
     .projects__text {
       max-width: 95%;
       font-size: 1.17rem; }
