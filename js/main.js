@@ -83,9 +83,12 @@ $(document).ready(function(){
   var next = $('.swiper-button-next');
   var prev = $('.swiper-button-prev');
   var bullets = $('.swiper-pagination');
+  var bullet = $('.swiper-pagination-bullet')
 
-  next.css('left', prev.width() + 20 + bullets.width() + 20);
-  bullets.css('left', prev.width() + 20)
+  
+  bullet.css({'width': '10px', 'height': '10px', 'margin': '0 8px', 'bottom': '-2px'});
+  bullets.css('left', prev.width() + 20);
+  next.css('left', prev.width() + 21 + bullets.width() + 21);
 
 
 
