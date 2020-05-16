@@ -905,7 +905,7 @@ img {
     max-width: 90%; }
   .projects {
     padding-top: 3rem;
-    padding-bottom: 0; }
+    padding-bottom: 1rem; }
     .projects__title {
       margin-bottom: 3.1rem; }
     .projects__heading {
@@ -916,6 +916,9 @@ img {
     .projects__text {
       max-width: 95%;
       font-size: 1.17rem; }
+  .swiper-container__image {
+    max-width: 340px;
+    max-height: 202px; }
   .swiper-wrapper {
     margin-bottom: 2.1rem; }
   .swiper-slide__text {
@@ -925,6 +928,8 @@ img {
     margin-bottom: 0.9rem; }
   .swiper-slide__value {
     font-size: 1.17rem; }
+  .control {
+    padding-top: 3.3rem; }
   .types__section-title {
     margin-bottom: 3.3rem; }
   .col {
