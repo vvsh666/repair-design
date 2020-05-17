@@ -398,7 +398,7 @@ template {
 
 .container {
   width: 85%;
-  max-width: 1256px;
+  max-width: 1236px;
   margin: auto; }
 
 .row {
@@ -407,8 +407,7 @@ template {
   align-items: flex-start; }
 
 .col-30 {
-  flex-basis: 32.8%;
-  padding: 0 0.71rem; }
+  max-width: 33%; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -599,7 +598,6 @@ img {
     align-items: flex-start; }
   .projects__col-40 {
     max-width: 37%;
-    padding-left: 1.357rem;
     padding-right: 2rem; }
   .projects__col-60 {
     max-width: 63%; }
@@ -840,6 +838,8 @@ img {
   .row {
     flex-direction: column;
     align-items: center; }
+  .col-30 {
+    max-width: 100%; }
   .types__card, .design__card {
     margin-bottom: 6.58rem; }
   .card__text {
