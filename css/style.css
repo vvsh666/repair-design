@@ -750,18 +750,21 @@ img {
   .control__label {
     margin-bottom: -6px;
     color: rgba(54, 54, 54, 0.5); }
-  .control__input::-webkit-input-placeholder {
-    color: #363636; }
-  .control__input::-moz-placeholder {
-    color: #363636; }
-  .control__input:-ms-input-placeholder {
-    color: #363636; }
-  .control__input::-ms-input-placeholder {
-    color: #363636; }
-  .control__input::placeholder {
-    color: #363636; }
-  .control__input-group {
-    flex-basis: 30%; }
+  .control__input {
+    outline: none;
+    color: #131313; }
+    .control__input::-webkit-input-placeholder {
+      color: #363636; }
+    .control__input::-moz-placeholder {
+      color: #363636; }
+    .control__input:-ms-input-placeholder {
+      color: #363636; }
+    .control__input::-ms-input-placeholder {
+      color: #363636; }
+    .control__input::placeholder {
+      color: #363636; }
+    .control__input-group {
+      flex-basis: 30%; }
   .control__button {
     font-size: 1.07rem;
     padding: 1.2rem 4.4rem; }
@@ -1035,6 +1038,7 @@ img {
       color: rgba(255, 255, 255, 0.5); }
     .control__input {
       font-size: 1.5rem;
+      color: #ffffff;
       border-color: #ffffff; }
       .control__input::-webkit-input-placeholder {
         color: #ffffff; }
