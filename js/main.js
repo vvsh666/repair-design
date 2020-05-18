@@ -90,7 +90,7 @@ $(document).ready(function(){
   bullets.css({'left': prev.width() + 21, 'bottom': '-2px'});
   next.css('left', prev.width() + 21 + bullets.width() + 21);
 
-
+  new WOW().init();
 
 });
 
