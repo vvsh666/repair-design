@@ -921,6 +921,10 @@ img {
     align-items: center; }
   .col-30 {
     max-width: 100%; }
+  .control__input-group {
+    flex-basis: 28%; }
+  .control__button {
+    padding: 13px 38px; }
   .types__card, .design__card {
     margin-bottom: 6.58rem; }
   .card__text {
@@ -997,9 +1001,11 @@ img {
     .projects__text {
       max-width: 95%;
       font-size: 1.17rem; }
-  .swiper-container__image {
-    max-width: 340px;
-    height: 202px; }
+  .swiper-container {
+    width: 100%; }
+    .swiper-container__image {
+      max-width: 340px;
+      height: 202px; }
   .swiper-wrapper {
     margin-bottom: 2.1rem; }
   .swiper-slide__text {
@@ -1061,6 +1067,9 @@ img {
     .control__button {
       position: absolute;
       bottom: -25px;
+      left: 0;
+      right: 0;
+      margin: auto;
       padding: 17px 0;
       order: 4;
       font-size: 1.25rem; }
