@@ -67,6 +67,8 @@
       color: $light
 
 
+
+
 @media screen and ( max-width: 570px )
   .container
     width: 90%
@@ -120,7 +122,7 @@
       max-width: 90%
   .projects
     padding-top: 3rem
-    padding-bottom: 1rem
+    padding-bottom: 0.5rem
     &__title
       margin-bottom: 3.1rem
     &__heading
@@ -136,7 +138,7 @@
     &-container
       &__image
         max-width: 340px
-        max-height: 202px
+        height: 202px
     &-wrapper
       margin-bottom: 2.1rem
     &-slide
@@ -148,8 +150,58 @@
       &__value
         font-size: 1.17rem
   .control
-    padding-top: 3.3rem
+    padding-top: 3.67rem
+    padding-bottom: 0
+    background-color: $dark
+    &__section-title
+      margin-top: 0
+      margin-bottom: 3.3rem
+    &__video
+      max-width: 100%
+      min-height: 17.25rem
+      margin-bottom: 2.33rem
+      box-shadow: 0px 20px 30px rgba(24, 24, 24, 0.1);
+    &__text
+      margin-bottom: 2.4rem
+      font-size: 1.16rem
+      line-height: 2rem
+      color: $light
+      &::before
+        margin-bottom: 1.3rem
+    &__form
+      position: relative
+      padding-bottom: 7.33rem
+      flex-direction: column
+    &__label
+      margin-bottom: -4px
+      font-size: 1.25rem
+      color: rgba(255, 255, 255, 0.5);
+    &__input
+      font-size: 1.5rem
+      border-color: $light
+      &::placeholder
+        color: $light
+      &-group
+        margin-bottom: -0.3rem
+        &:first-of-type
+          margin-bottom: 5.25rem
+    &__policy
+      &-label
+        justify-content: flex-start
+        font-size: 1.33rem
+        color: $light
+    &__button
+      position: absolute
+      bottom: -25px
+      padding: 17px 0
+      order: 4
+      font-size: 1.25rem
+  .video
+    &__play
+      width: 64px
+      width: 64px
   .types
+    padding-top: 6.8rem
     &__section-title
       margin-bottom: 3.3rem
   .col

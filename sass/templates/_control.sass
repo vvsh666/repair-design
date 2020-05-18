@@ -1,0 +1,67 @@
+.control
+  padding-bottom: 6.1rem
+  &__section-title
+    margin-bottom: 2.214rem
+    margin-top: -27.6rem
+  &__video
+    position: relative
+    display: flex
+    margin: auto
+    margin-bottom: 4.35rem
+    max-width: 58.357rem
+    min-height: 31rem
+    background: $dark url('../img/video-mask.jpg') no-repeat center / cover
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15)
+    &::before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      background-color: rgba($dark, 0.8)
+  &__text
+    max-width: 40.7rem
+    margin: auto
+    text-align: center
+    font-size: 1.428rem
+    line-height: 1.7
+    margin-bottom: 4.6rem
+    &::before
+      content: ''
+      display: block
+      margin: auto
+      width: 55px
+      height: 2px
+      background-color: $primary
+      border-radius: 1px
+      margin-bottom: 2.1rem
+  &__form
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    max-width: 55rem
+    margin: auto
+  &__policy
+    flex-basis: 100%
+    color: $dark
+    margin-top: 1.2rem
+    &-label
+      justify-content: center
+      color: $dark
+  &__label
+    margin-bottom: -6px
+    color: rgba(54, 54, 54, 0.5)
+  &__input
+    &::placeholder
+      color: $medium
+    &-group
+      flex-basis: 30%
+  &__button
+    font-size: 1.07rem
+    padding: 1.2rem 4.4rem
+.video
+  &__play
+    position: relative
+    margin: auto
+
+
+      

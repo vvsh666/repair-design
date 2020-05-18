@@ -44,8 +44,12 @@
   font-size: 1.285rem
   color: $light
   padding: 0.485rem 0
-  &::placeholder
-    color: $light
+  &--light
+    &::placeholder
+      color: $light
+  &-group
+    display: flex
+    flex-direction: column
 .policy
   &__checkbox
     opacity: 0
