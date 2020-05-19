@@ -821,6 +821,7 @@ img {
   text-transform: uppercase;
   text-align: center;
   background-color: #E3B873;
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.1);
   color: #ffffff;
   padding: 1.214rem 0;
   -webkit-animation-name: drift;
@@ -910,7 +911,7 @@ img {
     max-width: 63.07rem;
     margin: auto;
     margin-top: -20.2rem;
-    background: #181818 url("../img/bg-lines-footer.svg") no-repeat center/cover;
+    background: #181818 url("../img/bg-lines.svg") no-repeat center/cover;
     padding: 2.3rem; }
   .footer__title {
     text-transform: uppercase;
@@ -1224,7 +1225,8 @@ img {
     text-align: center; }
   .footer__wrap {
     padding: 0;
-    background-color: #131313; }
+    background-color: #131313;
+    background-image: none; }
   .footer__title {
     margin-bottom: 4.2rem;
     font-size: 1.67rem; }
