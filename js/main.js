@@ -43,8 +43,10 @@ $(document).ready(function(){
     modal.toggleClass('modal--visible')
   });
 
-  $(document).on('keydown', function() {
+  $(document).on('keydown', function(event) {
+    if (event.code == 'Escape' && modal.hasClass('modal--visible')) {
     modal.removeClass('modal--visible')
+    }
   });
 
   $(document).on('click', function(event) {
@@ -104,8 +106,40 @@ $(document).ready(function(){
   
   // console.log(changeLineHeight.height(), changeLineHeight.offset().top);
 
+  //Валидация формы modal__form
+  $('.modal__form').validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      // строчное правило
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required",
+      // правило-объект (блок)
+      userEmail: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      userName: {
+        required: "Пожалуйста, введите Ваше имя",
+        minlength: "Имя не короче двух букв",
+        maxlength: "Имя не длиннее 15 букв"
+      },
+      userPhone: "Телефон обязателен",
+      userEmail: {
+        required: "Обязательно укажите Email",
+        email: "Введите в формате: name@domain.com"
+      }
+    }
+  });
   
-  
+  // Маска для номера телефона
+  $('[type=tel]').mask('+7 (000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
 
 });
 
