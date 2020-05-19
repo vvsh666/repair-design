@@ -453,6 +453,7 @@ img {
         margin: 0 10px;
         border-radius: 1px; }
   .section-descr {
+    display: block;
     margin: 0 auto;
     text-align: center;
     font-size: 1.43rem;
@@ -811,7 +812,15 @@ img {
   text-align: center;
   background-color: #E3B873;
   color: #ffffff;
-  padding: 1.214rem 0; }
+  padding: 1.214rem 0;
+  -webkit-animation-name: drift;
+  animation-name: drift;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); }
 
 .design__section-title {
   margin-bottom: 1.3rem; }
@@ -881,6 +890,56 @@ img {
   .modal__button {
     align-self: flex-end;
     padding: 1.3rem 3.55rem; }
+
+.line-height-up-down.animated {
+  -webkit-animation-name: lineHeightUpDown;
+  animation-name: lineHeightUpDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s; }
+
+@-webkit-keyframes drift {
+  0% {
+    left: 0; }
+  25% {
+    left: 50%; }
+  50% {
+    left: auto;
+    right: 0; }
+  75% {
+    left: -50%; }
+  100% {
+    left: 0; } }
+
+@keyframes drift {
+  0% {
+    left: 0; }
+  25% {
+    left: 50%; }
+  50% {
+    left: auto;
+    right: 0; }
+  75% {
+    left: -50%; }
+  100% {
+    left: 0; } }
+
+@-webkit-keyframes lineHeightUpDown {
+  0% {
+    line-height: 0; }
+  50% {
+    line-height: 2; }
+  100% {
+    line-height: inherit; } }
+
+@keyframes lineHeightUpDown {
+  0% {
+    line-height: 0; }
+  50% {
+    line-height: 2; }
+  100% {
+    line-height: inherit; } }
 
 @media screen and (max-width: 1300px) {
   html {

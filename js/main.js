@@ -91,7 +91,21 @@ $(document).ready(function(){
   bullets.css({'left': prev.width() + 21, 'bottom': '-2px'});
   next.css('left', prev.width() + 21 + bullets.width() + 21);
 
-  new WOW().init();
+  // new WOW().init();
+
+  // const changeLineHeight = $('.line-height-up-down');
+  // for (let index = 0; index < changeLineHeight.length; index++) {
+  //   const element = changeLineHeight[index];
+  //   if element.is
+  //   console.log(changeLineHeight[index]);
+  // }
+
+  
+  
+  // console.log(changeLineHeight.height(), changeLineHeight.offset().top);
+
+  
+  
 
 });
 

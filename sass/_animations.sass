@@ -1,0 +1,26 @@
+    
+.line-height-up-down
+  &.animated    
+    animation-name: lineHeightUpDown
+    animation-duration: 1s
+    animation-delay: 1s
+
+@keyframes drift
+  0%
+    left: 0
+  25%
+    left: 50%
+  50%
+    left: auto
+    right: 0
+  75%
+    left: -50%
+  100%
+    left: 0
+@keyframes lineHeightUpDown
+  0%
+    line-height: 0
+  50%
+    line-height: 2
+  100%
+    line-height: inherit
