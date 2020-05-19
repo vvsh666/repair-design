@@ -376,6 +376,7 @@ template {
   .input--light::placeholder {
     color: #ffffff; }
   .input-group {
+    position: relative;
     display: flex;
     flex-direction: column; }
 
@@ -402,6 +403,9 @@ template {
     justify-content: center; }
 
 div.invalid {
+  position: absolute;
+  top: 0;
+  right: 0;
   color: tomato; }
 
 input.invalid {

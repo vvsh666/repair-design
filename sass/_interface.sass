@@ -48,6 +48,7 @@
     &::placeholder
       color: $light
   &-group
+    position: relative
     display: flex
     flex-direction: column
 .policy
@@ -75,6 +76,9 @@
       justify-content: center
 div
   &.invalid
+    position: absolute
+    top: 0
+    right: 0
     color: tomato
 input
   &.invalid
