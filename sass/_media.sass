@@ -294,7 +294,45 @@
     &__scroll-down
       display: none
   
+@media screen and ( max-height: 500px ) and (max-width: 992px ) 
+  .header
+    padding: 1rem 0
+  .hero
+    padding-top: 5rem
+    &::after
+      display: none
+    &__text
+      margin-bottom: 2rem
+  .swiper
+    &-container
+      &__image
+        max-height: 300px
+  .footer
+    &__title
+      margin-bottom: 2rem
+    &__input
+      &-group
+        margin-bottom: 1rem
+    &__policy
+      margin-bottom: 2rem
+    &__map
+      height: 300px
 
+@media screen and ( max-height: 500px ) and (max-width: 586px ) 
+  .hero
+    &__button
+      width: 46%
+      margin-right: 1rem
+      &-outline
+        width: 46%
+  .control
+    &__form
+      padding-bottom: 4rem
+    &__input
+      &-group
+        margin-bottom: 1rem
+        &:first-of-type
+          margin-bottom: 1rem
     
 
   

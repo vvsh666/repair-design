@@ -1328,3 +1328,36 @@ img {
 @media screen and (max-height: 586px) and (min-width: 1200px) {
   .hero__scroll-down {
     display: none; } }
+
+@media screen and (max-height: 500px) and (max-width: 992px) {
+  .header {
+    padding: 1rem 0; }
+  .hero {
+    padding-top: 5rem; }
+    .hero::after {
+      display: none; }
+    .hero__text {
+      margin-bottom: 2rem; }
+  .swiper-container__image {
+    max-height: 300px; }
+  .footer__title {
+    margin-bottom: 2rem; }
+  .footer__input-group {
+    margin-bottom: 1rem; }
+  .footer__policy {
+    margin-bottom: 2rem; }
+  .footer__map {
+    height: 300px; } }
+
+@media screen and (max-height: 500px) and (max-width: 586px) {
+  .hero__button {
+    width: 46%;
+    margin-right: 1rem; }
+    .hero__button-outline {
+      width: 46%; }
+  .control__form {
+    padding-bottom: 4rem; }
+  .control__input-group {
+    margin-bottom: 1rem; }
+    .control__input-group:first-of-type {
+      margin-bottom: 1rem; } }
