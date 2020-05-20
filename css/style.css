@@ -944,8 +944,12 @@ img {
     padding: 1.25rem 4.4rem;
     font-size: 1.07rem; }
   .footer__block {
+    max-width: 66rem;
+    margin: auto;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   .footer__text {
     max-width: 36rem;
     margin: auto;
@@ -977,6 +981,9 @@ img {
       .footer__social-link:nth-of-type(2) {
         background: #E3B873 url("../img/instagram-icon.svg") no-repeat center/12px; }
   .footer__map {
+    position: relative;
+    height: 465px;
+    width: 100%;
     margin-bottom: 4.7rem;
     display: flex;
     justify-content: center;
