@@ -5,8 +5,10 @@
     max-width: 63.07rem
     margin: auto
     margin-top: -20.2rem
+    margin-bottom: 3.6rem
     background: $black url('../img/bg-lines.svg') no-repeat center / cover
-    padding: 2.3rem
+    padding-top: 2.3rem
+    padding-bottom: 2.46rem
   &__title
     text-transform: uppercase
     font-family: 'Yeseva One', cursive
@@ -20,7 +22,6 @@
   &__form
     max-width: 37rem
     margin: auto
-    margin-bottom: 3.714rem
     display: flex
     justify-content: space-between
     align-items: flex-start
@@ -44,8 +45,45 @@
     margin: auto
     padding: 1.25rem 4.4rem
     font-size: 1.07rem
+  &__block
+    display: flex
+    flex-direction: column
+  &__text
+    max-width: 36rem
+    margin: auto
+    margin-bottom: 1.55rem
+    font-family: 'Yeseva One', cursive
+    font-size: 1.43rem
+    line-height: 1.4
+    text-align: center
+    text-transform: uppercase
+    color: $primary
+  &__social
+    margin-bottom: 3.09rem
+    display: flex
+    justify-content: center
+    align-items: center
+    &-link
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 28px
+      height: 28px
+      border-radius: 50%
+      &:nth-of-type(1)
+        margin-right: 1.07rem  
+        background: $primary url('../img/email-icon.svg') no-repeat center / 14.5px
+      &:nth-of-type(2)
+        background: $primary url('../img/instagram-icon.svg') no-repeat center / 12px
+  &__map
+    margin-bottom: 4.7rem
+    display: flex
+    justify-content: center
+    align-items: center
+    overflow: hidden
   &__menu
     padding: 3.3rem 0
     background: $dark
+  
         
   
