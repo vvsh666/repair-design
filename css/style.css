@@ -956,6 +956,9 @@ img {
     text-align: center;
     text-transform: uppercase;
     color: #E3B873; }
+  .footer__phone {
+    text-decoration: none;
+    color: #E3B873; }
   .footer__social {
     margin-bottom: 3.09rem;
     display: flex;
@@ -982,6 +985,10 @@ img {
   .footer__menu {
     padding: 3.3rem 0;
     background: #131313; }
+
+.ymaps-2-1-76-ground-pane {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1); }
 
 .line-height-up-down.animated {
   -webkit-animation-name: lineHeightUpDown;
