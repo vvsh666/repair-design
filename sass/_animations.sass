@@ -3,18 +3,24 @@
   &.animated    
     animation-name: lineHeightUpDown
     animation-duration: 1s
-    animation-delay: 1s
+    animation-delay: 0.2s
+.drift
+  &.animated
+    animation-name: drift
+    animation-duration: 0.5s
+    animation-delay: 0.2s
+    animation-timing-function: cubic-bezier(0.68,-0.55,0.265,1.55)
 
 @keyframes drift
   0%
     left: 0
   25%
-    left: 50%
+    left: 30%
   50%
     left: auto
-    right: 0
+    right: 20%
   75%
-    left: -50%
+    left: -30%
   100%
     left: 0
 @keyframes lineHeightUpDown

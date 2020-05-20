@@ -823,15 +823,7 @@ img {
   background-color: #E3B873;
   box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.1);
   color: #ffffff;
-  padding: 1.214rem 0;
-  -webkit-animation-name: drift;
-  animation-name: drift;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
-  -webkit-animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+  padding: 1.214rem 0; }
 
 .design {
   padding-bottom: 25.3rem; }
@@ -959,19 +951,29 @@ img {
   animation-name: lineHeightUpDown;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s; }
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s; }
+
+.drift.animated {
+  -webkit-animation-name: drift;
+  animation-name: drift;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  -webkit-animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); }
 
 @-webkit-keyframes drift {
   0% {
     left: 0; }
   25% {
-    left: 50%; }
+    left: 30%; }
   50% {
     left: auto;
-    right: 0; }
+    right: 20%; }
   75% {
-    left: -50%; }
+    left: -30%; }
   100% {
     left: 0; } }
 
@@ -979,12 +981,12 @@ img {
   0% {
     left: 0; }
   25% {
-    left: 50%; }
+    left: 30%; }
   50% {
     left: auto;
-    right: 0; }
+    right: 20%; }
   75% {
-    left: -50%; }
+    left: -30%; }
   100% {
     left: 0; } }
 

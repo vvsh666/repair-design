@@ -96,6 +96,34 @@ $(document).ready(function(){
   // Запуск плагина WOW
   // new WOW().init();
 
+  //Анимация SCC
+  var windowHeight = $(window).height();
+
+
+	$(document).on('scroll', function() {
+		$('.drift').each(function() {
+			var self = $(this),
+			height = self.offset().top + self.height();
+			if ($(document).scrollTop() + windowHeight >= height) {
+				self.addClass('animated');
+			} else {
+        self.removeClass('animated');
+      }
+		});
+  });
+  
+  $(document).on('scroll', function() {
+		$('.line-height-up-down').each(function() {
+			var self = $(this),
+			height = self.offset().top + self.height();
+			if ($(document).scrollTop() + windowHeight >= height) {
+				self.addClass('animated');
+			} else {
+        self.removeClass('animated');
+      }
+		});
+  });
+
   //Валидация формы modal__form
   $('.modal__form').validate({
     errorClass: "invalid",
