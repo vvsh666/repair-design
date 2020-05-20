@@ -36,22 +36,22 @@ $(document).ready(function(){
 
   
   modalBtn.on('click', function() {
-    modal.toggleClass('modal--visible')
+    modal.toggleClass('modal--visible');
   });
 
   closeBtn.on('click', function() {
-    modal.toggleClass('modal--visible')
+    modal.toggleClass('modal--visible');
   });
 
   $(document).on('keydown', function(event) {
     if (event.code == 'Escape' && modal.hasClass('modal--visible')) {
-    modal.removeClass('modal--visible')
+    modal.removeClass('modal--visible');
     }
   });
 
   $(document).on('click', function(event) {
     if ($(event.target).is('.modal--visible')) {
-      modal.toggleClass('modal--visible')
+      modal.toggleClass('modal--visible');
     }
   });
 
@@ -86,7 +86,7 @@ $(document).ready(function(){
   var next = $('.swiper-button-next');
   var prev = $('.swiper-button-prev');
   var bullets = $('.swiper-pagination');
-  var bullet = $('.swiper-pagination-bullet')
+  var bullet = $('.swiper-pagination-bullet');
 
   
   bullet.css({'width': '10px', 'height': '10px', 'margin': '0 8px'});
