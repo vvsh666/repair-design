@@ -1065,7 +1065,10 @@ img {
   .footer {
     background-image: none; }
     .footer__wrap {
-      margin-top: 0; } }
+      margin-top: 0;
+      padding: 0;
+      background-color: #131313;
+      background-image: none; } }
 
 @media screen and (max-width: 570px) {
   .container {
@@ -1223,10 +1226,6 @@ img {
     width: 15.83rem; }
   .design__pricetag {
     text-align: center; }
-  .footer__wrap {
-    padding: 0;
-    background-color: #131313;
-    background-image: none; }
   .footer__title {
     margin-bottom: 4.2rem;
     font-size: 1.67rem; }
