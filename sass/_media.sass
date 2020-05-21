@@ -14,6 +14,9 @@
   .projects
     &__col-40
       padding-left: 0
+  .team
+    &__card
+      margin-left: 2.5rem
 
 @media screen and ( max-width: 992px )
   .nav
@@ -36,6 +39,11 @@
     &__col-60
       max-width: 100%
       align-self: center
+  .team
+    &__card
+      &-text
+        width: 90%
+        
 
 @media screen and ( max-width: 760px )
   .row
@@ -72,7 +80,44 @@
       color: $light
     &__section-descr
       color: $light
+  .team
+    padding-bottom: 0
+    background-color: $dark
+    &__section
+      &-title
+        margin-top: 0
+    &__row
+      flex-direction: column
+      align-items: center
+      margin-bottom: 0
+    &__card
+      margin-bottom: 7.5rem
+      &:last-of-type
+        margin-bottom: 6.3rem
+      &-text
+        width: 19.42rem
+        margin-top: -7rem
+        padding-top: 2rem
+    &__tag
+      width: 5.83rem
+      height: 5.83rem
+      top: -2.915rem
+      left: -2.915rem
+    &__icon
+      width: 60%
+    &__title
+      font-size: 1.5rem
+      margin-bottom: 1rem
+    &__subtitle
+      font-size: 1.5rem
+      margin-bottom: 2rem
+    &__experience
+      padding: 1.1rem 0
+      font-size: 1.08rem
+    &__text
+      display: none
   .footer
+    padding-top: 0
     background-image: none
     &__wrap
       margin-top: 0
@@ -238,6 +283,11 @@
   .design
     &__pricetag
       text-align: center
+  .team
+    &__section
+      &-descr
+        max-width: 100%
+        margin-bottom: 6.67rem
   .footer
     &__title
       margin-bottom: 4.2rem
