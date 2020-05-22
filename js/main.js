@@ -32,8 +32,13 @@ $(document).ready(function(){
   var modal = $('.modal'),
       modalBtn = $('[data-toggle=modal]'),
       closeBtn = $('.modal__close'),
-      btnUp = $('.button-up');
+   
 
+      btnUp = $('.button-up'),
+
+      modalThanks = $('.modal-thanks'),
+      closeBtnThanks = $('.modal-thanks__close'),
+      linkThanks = $('.modal-thanks__link');
   
   modalBtn.on('click', function() {
     modal.toggleClass('modal--visible');
@@ -54,6 +59,15 @@ $(document).ready(function(){
       modal.toggleClass('modal--visible');
     }
   });
+
+  closeBtnThanks.on('click', function() {
+    modalThanks.toggleClass('modal-thanks--visible');
+  });
+
+  linkThanks.on('click', function() {
+    modalThanks.toggleClass('modal-thanks--visible');
+  });
+
 
   $(window).scroll(function() {
     if ($(this).scrollTop() > 50) {
@@ -164,9 +178,9 @@ $(document).ready(function(){
         url: "send.php",
         data: $(form).serialize(),
         success: function (response) {
-          alert('Форма отправлена, мы свяжемся с Вами через 15 минут');
           $(form)[0].reset();
           modal.removeClass('modal--visible');
+          modalThanks.toggleClass('modal-thanks--visible');
         },
         error: function(response) {
           console.error('Ошибка запроса ' + response);
@@ -208,6 +222,20 @@ $(document).ready(function(){
         required: "Обязательно введите Ваш вопрос",
         minlength: "Длина не менее 5 символов"
       }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          $(form)[0].reset();
+          modalThanks.toggleClass('modal-thanks--visible');
+        },
+        error: function(response) {
+          console.error('Ошибка запроса ' + response);
+        }        
+      });
     }
   });
 
@@ -236,6 +264,20 @@ $(document).ready(function(){
         required: "Телефон обязателен",
         minlength: "Введены не все цифры"
       }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          $(form)[0].reset();
+          modalThanks.toggleClass('modal-thanks--visible');
+        },
+        error: function(response) {
+          console.error('Ошибка запроса ' + response);
+        }        
+      });
     }
   });
   
