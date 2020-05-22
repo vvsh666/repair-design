@@ -8,7 +8,7 @@ const autoprefixer = require('gulp-autoprefixer');
 // Static server
 function bs() {
     serveSass();
-    serveSccMin();
+    // serveSccMin();
     browserSync.init({
         server: {
             baseDir: "./"
