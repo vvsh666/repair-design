@@ -134,7 +134,10 @@ $(document).ready(function(){
         minlength: 2,
         maxlength: 15
       },
-      userPhone:  "required",
+      userPhone: {
+        required: true,
+        minlenght: 18
+      },
       userEmail: {
         required: true,
         email: true
@@ -146,7 +149,10 @@ $(document).ready(function(){
         minlength: "Имя не короче двух букв",
         maxlength: "Имя не длиннее 15 букв"
       },
-      userPhone: "Телефон обязателен",
+      userPhone: {
+        required: "Телефон обязателен",
+        minlenght: "Введены не все цифры"
+      },
       userEmail: {
         required: "Обязательно укажите Email",
         email: "Введите в формате: name@domain.com"
@@ -194,7 +200,10 @@ $(document).ready(function(){
         minlength: 2,
         maxlength: 15
       },
-      userPhone: "required",
+      userPhone: {
+        required: true,
+        minlenght: 18
+      },
     },
     messages: {
       userName: {
@@ -202,7 +211,10 @@ $(document).ready(function(){
         minlength: "Имя не короче двух букв",
         maxlength: "Имя не длиннее 15 букв"
       },
-      userPhone: "Телефон обязателен"
+      userPhone: {
+        required: "Телефон обязателен",
+        minlenght: "Введены не все цифры"
+      }
     }
   });
   
