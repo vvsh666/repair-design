@@ -136,7 +136,7 @@ $(document).ready(function(){
       },
       userPhone: {
         required: true,
-        minlenght: 18
+        minlength: 18
       },
       userEmail: {
         required: true,
@@ -151,7 +151,7 @@ $(document).ready(function(){
       },
       userPhone: {
         required: "Телефон обязателен",
-        minlenght: "Введены не все цифры"
+        minlength: "Введены не все цифры"
       },
       userEmail: {
         required: "Обязательно укажите Email",
@@ -170,7 +170,10 @@ $(document).ready(function(){
         minlength: 2,
         maxlength: 15
       },
-      userPhone: "required",
+      userPhone: {
+        required: true,
+        minlength: 18
+      },
       userQuestion: {
         required: true,
         minlength: 5
@@ -182,7 +185,10 @@ $(document).ready(function(){
         minlength: "Имя не короче двух букв",
         maxlength: "Имя не длиннее 15 букв"
       },
-      userPhone: "Телефон обязателен",
+      userPhone: {
+        required: "Телефон обязателен",
+        minlength: "Введены не все цифры"
+      },
       userQuestion: {
         required: "Обязательно введите Ваш вопрос",
         minlength: "Длина не менее 5 символов"
@@ -202,7 +208,7 @@ $(document).ready(function(){
       },
       userPhone: {
         required: true,
-        minlenght: 18
+        minlength: 18
       },
     },
     messages: {
@@ -213,7 +219,7 @@ $(document).ready(function(){
       },
       userPhone: {
         required: "Телефон обязателен",
-        minlenght: "Введены не все цифры"
+        minlength: "Введены не все цифры"
       }
     }
   });
