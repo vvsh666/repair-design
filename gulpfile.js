@@ -20,13 +20,13 @@ function bs() {
     watch("./js/*.js").on('change', browserSync.reload);
 };
 
-function serveSccMin() {
+/* function serveSccMin() {
         src(['css/*.css', '!css/*.min.css'])
         .pipe(cssmin())
         .pipe(rename({suffix: '.min'}))
         .pipe(dest('css'));
 };
-
+ */
 function serveSass() {
     return src("./sass/**/*.sass", "./sass/**/*.scss")
         .pipe(sass())
