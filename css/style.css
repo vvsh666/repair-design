@@ -1497,3 +1497,8 @@ img {
     margin-bottom: 1rem; }
     .control__input-group:first-of-type {
       margin-bottom: 1rem; } }
+
+@media screen and (max-height: 400px) and (max-width: 992px) {
+  .modal__dialog {
+    overflow-y: scroll;
+    height: 300px; } }
