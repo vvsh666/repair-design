@@ -831,7 +831,7 @@ img {
   padding: 1.214rem 0; }
 
 .design__row {
-  margin-bottom: -32.5rem;
+  margin-bottom: -35.4rem;
   padding-bottom: 0; }
 
 .design__section-title {
@@ -846,8 +846,95 @@ img {
   text-align: left; }
 
 .steps {
-  padding-top: 32.5rem;
-  height: 80rem; }
+  padding-top: 30.5rem;
+  padding-bottom: 35.4rem; }
+  .steps__title-up {
+    margin: 0;
+    margin-bottom: 1rem;
+    font-size: 1.07rem;
+    line-height: 1.4;
+    text-transform: uppercase;
+    color: #ffffff; }
+  .steps__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+  .steps__col-40 {
+    width: 38.5%;
+    padding-right: 1rem; }
+  .steps__col-60 {
+    width: 61.5%; }
+  .steps__title {
+    margin-bottom: 3.5rem; }
+    .steps__title--left {
+      text-align: left; }
+  .steps__heading {
+    margin: 0;
+    font-family: 'Yeseva One', cursive;
+    text-transform: uppercase;
+    font-size: 1.93rem;
+    line-height: 1.38;
+    margin-bottom: 1.6rem; }
+    .steps__heading--primary {
+      color: #E3B873; }
+  .steps__word {
+    display: flex;
+    align-items: center; }
+    .steps__word::after {
+      content: '';
+      width: 6.57rem;
+      height: 1px;
+      background-color: #E3B873;
+      margin-left: 6rem; }
+  .steps__container-text {
+    height: 25.5rem;
+    margin-left: 0;
+    max-width: 27.21rem; }
+  .steps__container-image {
+    height: 26.85rem;
+    width: 100%; }
+  .steps-slide__header {
+    max-width: 15rem;
+    margin: 0;
+    margin-bottom: 0.85rem;
+    font-family: 'Yeseva One', cursive;
+    font-size: 1.07;
+    line-height: 1.53;
+    text-transform: uppercase;
+    color: #E3B873; }
+  .steps-slide__text {
+    max-width: 23.3rem;
+    margin: 0;
+    margin-bottom: 0.85rem;
+    font-size: 1.07rem;
+    line-height: 1.67; }
+  .steps__list {
+    margin-top: 3.8rem;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    list-style-type: none; }
+    .steps__list-item {
+      margin-bottom: 3rem;
+      width: 32%; }
+    .steps__list-title {
+      font-family: 'Yeseva One', cursive;
+      font-size: 1.07rem;
+      line-height: 1.4;
+      text-transform: uppercase;
+      margin-bottom: 0.7rem; }
+      .steps__list-title::after {
+        content: '';
+        display: block;
+        width: 1.4rem;
+        height: 1px;
+        background-color: #E3B873; }
+    .steps__list-text {
+      font-size: 1.07rem;
+      line-height: 1.2;
+      max-width: 9.72rem; }
 
 .team {
   padding-bottom: 1rem; }

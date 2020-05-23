@@ -97,15 +97,33 @@ $(document).ready(function(){
     },
   });
 
-  var next = $('.swiper-button-next');
+  var mySwiper2 = new Swiper ('.swiper-container-2', {
+    loop: true,
+    spaceBetween: 10,
+    pagination: {
+      el: '.steps__pagination',
+      type: 'bullets',
+    },
+    navigation: {
+      nextEl: '.steps__button-next',
+      prevEl: '.steps__button-prev',
+    },
+  });
+
+  var next1 = $('.projects__button-next');
+  var next2 = $('.steps__button-next');
   var prev = $('.swiper-button-prev');
-  var bullets = $('.swiper-pagination');
+  var bullets1 = $('.projects__pagination');
+  var bullets2 = $('.steps__pagination');
   var bullet = $('.swiper-pagination-bullet');
+  
 
   
   bullet.css({'width': '10px', 'height': '10px', 'margin': '0 8px'});
-  bullets.css({'left': prev.width() + 21, 'bottom': '-2px'});
-  next.css('left', prev.width() + 21 + bullets.width() + 21);
+  bullets1.css({'left': prev.width() + 21, 'bottom': '-2px'});
+  bullets2.css({'left': prev.width() + 21, 'bottom': '-2px'});
+  next1.css('left', prev.width() + 21 + bullets1.width() + 21);
+  next2.css('left', prev.width() + 21 + bullets2.width() + 21);
 
   // Запуск плагина WOW
   // new WOW().init();
