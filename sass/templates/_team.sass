@@ -1,5 +1,5 @@
 .team
-  padding-bottom: 25rem
+  padding-bottom: 1rem
   &__section
     &-title
       margin-top: -33.4rem
@@ -17,6 +17,7 @@
     position: relative
   &__tag
     position: absolute
+    z-index: 5
     top: -2.5rem
     left: -2.5rem
     display: flex
@@ -28,12 +29,25 @@
     box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5)
   &__icon
     width: 55%
+  &__image
+    position: relative
+    width: 19.43rem
+    height: 25.5rem
+    overflow: hidden
+  &__img
+    position: absolute
+    top: 50%
+    left: 50%
+    width: 19.43rem
+    height: 25.5rem
+    transform: translate(-50%,-50%)
+    object-fit: cover
   &__card    
     &-text
       position: relative
       width: 16.64rem
       margin: 0 auto
-      margin-top: -6rem
+      margin-top: -5.8rem
       padding-top: 1.57rem
       display: flex
       flex-direction: column
@@ -67,8 +81,8 @@
     margin: auto
     text-align: center
     font-size: 1.428rem
-    line-height: 1.7
-    margin-bottom: 4.6rem
+    line-height: 1.73
+    margin-bottom: 1.5rem
     &::before
       content: ''
       display: block

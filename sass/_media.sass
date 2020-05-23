@@ -43,7 +43,18 @@
     &__card
       &-text
         width: 90%
-        
+    &__image
+      max-width: 100%
+      max-height: 100%
+      width: 100%
+      height: 100%
+    &__img
+      position: relative
+      width: 100%
+      height: 100%
+      left: 0
+      top: 0
+      transform: none
 
 @media screen and ( max-width: 760px )
   .row
@@ -80,7 +91,12 @@
       color: $light
     &__section-descr
       color: $light
+    &__row
+      margin-bottom: 0
+  .steps
+    display: none
   .team
+    padding-top: 1.3rem
     padding-bottom: 0
     background-color: $dark
     &__section
@@ -91,9 +107,9 @@
       align-items: center
       margin-bottom: 0
     &__card
-      margin-bottom: 7.5rem
-      &:last-of-type
-        margin-bottom: 6.3rem
+      margin-bottom: 7.4rem
+      // &:last-of-type
+      //   margin-bottom: 6.3rem
       &-text
         width: 19.42rem
         margin-top: -7rem
@@ -116,11 +132,13 @@
       font-size: 1.08rem
     &__text
       display: none
+  .customers
+    display: none
   .footer
     padding-top: 0
     background-image: none
     &__wrap
-      margin-top: 0
+      margin-top: -1.2rem
       padding: 0
       background-color: $dark
       background-image: none
