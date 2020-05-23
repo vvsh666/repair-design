@@ -951,6 +951,8 @@ img {
   .customers__section-descr {
     max-width: 25rem;
     margin-bottom: 3.3rem; }
+  .customers__row {
+    flex-wrap: wrap; }
   .customers__card {
     position: relative;
     max-width: 26.86rem;
@@ -1317,7 +1319,14 @@ img {
   .projects__col-40 {
     padding-left: 0; }
   .team__card {
-    margin-left: 2.5rem; } }
+    margin-left: 2.5rem; }
+  .customers {
+    padding-bottom: 18rem; }
+    .customers__row {
+      justify-content: space-around; }
+    .customers__col {
+      max-width: 50%;
+      margin-bottom: 5rem; } }
 
 @media screen and (max-width: 992px) {
   .nav {
