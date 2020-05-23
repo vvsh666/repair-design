@@ -84,16 +84,16 @@ $(document).ready(function(){
     return false;
   });
 
-  var mySwiper = new Swiper ('.swiper-container', {
+  var mySwiper1 = new Swiper ('.swiper-container-1', {
     loop: true,
     spaceBetween: 10,
     pagination: {
-      el: '.swiper-pagination',
+      el: '.projects__pagination',
       type: 'bullets',
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.projects__button-next',
+      prevEl: '.projects__button-prev',
     },
   });
 

@@ -653,39 +653,38 @@ img {
     max-width: 31.6rem;
     text-transform: none;
     font-family: 'Futura Book', sans-serif; }
+  .projects-slide {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; }
+    .projects-slide__text {
+      width: 50%;
+      margin-bottom: 2.6rem; }
+    .projects-slide__heading {
+      margin: 0;
+      font-size: 1.286rem;
+      line-height: 1.39;
+      font-family: 'Yeseva One', cursive;
+      text-transform: uppercase;
+      color: #E3B873;
+      margin-bottom: 0.4rem; }
+    .projects-slide__value {
+      font-size: 1.07rem;
+      line-height: 1.4; }
+    .projects-slide__img {
+      max-width: 100%; }
 
-.swiper-container {
+.swiper-container-1 {
   margin-left: 0;
   width: 27.21rem; }
-  .swiper-container__image {
+  .swiper-container-1__image {
     width: 48.5rem;
     max-width: 100%;
     margin-right: 0;
     margin-left: auto; }
 
-.swiper-wrapper {
+.swiper-wrapper-1 {
   margin-bottom: 4.58rem; }
-
-.swiper-slide {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start; }
-  .swiper-slide__text {
-    width: 50%;
-    margin-bottom: 2.6rem; }
-  .swiper-slide__heading {
-    margin: 0;
-    font-size: 1.286rem;
-    line-height: 1.39;
-    font-family: 'Yeseva One', cursive;
-    text-transform: uppercase;
-    color: #E3B873;
-    margin-bottom: 0.4rem; }
-  .swiper-slide__value {
-    font-size: 1.07rem;
-    line-height: 1.4; }
-  .swiper-slide-img {
-    max-width: 100%; }
 
 .swiper-pagination-bullets {
   width: auto; }
@@ -1496,20 +1495,20 @@ img {
     .projects__text {
       max-width: 95%;
       font-size: 1.17rem; }
-  .swiper-container {
+    .projects-slide__text {
+      margin-bottom: 2.25rem; }
+    .projects-slide__heading {
+      font-size: 1.16rem;
+      margin-bottom: 0.9rem; }
+    .projects-slide__value {
+      font-size: 1.17rem; }
+  .swiper-container-1 {
     width: 100%; }
-    .swiper-container__image {
+    .swiper-container-1__image {
       max-width: 340px;
       height: 202px; }
-  .swiper-wrapper {
+  .swiper-wrapper-1 {
     margin-bottom: 2.1rem; }
-  .swiper-slide__text {
-    margin-bottom: 2.25rem; }
-  .swiper-slide__heading {
-    font-size: 1.16rem;
-    margin-bottom: 0.9rem; }
-  .swiper-slide__value {
-    font-size: 1.17rem; }
   .control {
     padding-top: 3.67rem;
     padding-bottom: 0;
@@ -1653,7 +1652,7 @@ img {
       display: none; }
     .hero__text {
       margin-bottom: 2rem; }
-  .swiper-container__image {
+  .swiper-container-1__image {
     max-height: 300px; }
   .footer__title {
     margin-bottom: 2rem; }
