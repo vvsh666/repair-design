@@ -110,6 +110,26 @@ $(document).ready(function(){
     },
   });
 
+  $('.steps__list').on('click',  '.steps__list-item', function() {
+    const index = $(this).data('index')
+    $(this).addClass('steps__list-item--active').siblings().removeClass('steps__list-item--active');
+    mySwiper2[0].slideTo(index);
+    mySwiper2[1].slideTo(index);
+    console.log($(this));
+  });
+
+  $('#counter').html((mySwiper2[1].realIndex+1) + "/" + (mySwiper2[1].slides.length-2));
+
+  mySwiper2[1].on('slideChange', function () {
+    const active = mySwiper2[1].realIndex,
+          activeItem = $($('.steps__list-item')[active]);
+    activeItem.addClass('steps__list-item--active').siblings().removeClass('steps__list-item--active');
+    $('#counter').html((mySwiper2[1].realIndex+1) + "/" + (mySwiper2[1].slides.length-2));
+    console.log(activeItem);
+  });
+
+
+
   var next1 = $('.projects__button-next');
   var next2 = $('.steps__button-next');
   var prev = $('.swiper-button-prev');

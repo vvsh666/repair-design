@@ -865,7 +865,7 @@ img {
   .steps__col-60 {
     width: 61.5%; }
   .steps__title {
-    margin-bottom: 3.5rem; }
+    margin-bottom: 5.8rem; }
     .steps__title--left {
       text-align: left; }
   .steps__heading {
@@ -886,6 +886,13 @@ img {
       height: 1px;
       background-color: #E3B873;
       margin-left: 6rem; }
+  .steps__counter {
+    font-family: 'Yeseva One', cursive;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 1.4rem; }
   .steps__container-text {
     height: 25.5rem;
     margin-left: 0;
@@ -918,7 +925,16 @@ img {
     list-style-type: none; }
     .steps__list-item {
       margin-bottom: 3rem;
-      width: 32%; }
+      opacity: 0.3;
+      width: 16%; }
+      .steps__list-item:nth-child(1) {
+        margin-right: 11rem; }
+      .steps__list-item:nth-child(2) {
+        margin-right: 11rem; }
+      .steps__list-item:hover {
+        cursor: pointer; }
+      .steps__list-item--active {
+        opacity: 1; }
     .steps__list-title {
       font-family: 'Yeseva One', cursive;
       font-size: 1.07rem;
