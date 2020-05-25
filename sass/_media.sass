@@ -369,7 +369,58 @@
           background: $primary url('../img/instagram-icon.svg') no-repeat center / 19px
     &__menu
       display: none
-    
+
+@media screen and ( min-width: 992px )
+  .button
+    &:hover
+      cursor: pointer
+    &--primary
+      &:hover
+        box-shadow: none
+    &--outline
+      &:hover
+        border: 1px solid $primary
+        color: $primary
+  .logo
+    &:hover
+      color: $light
+  .nav
+    &__item
+      &:hover
+        color: $primary
+  .phone
+    &:hover
+      color: $light
+  .hero
+    &__scroll-down
+      &:hover
+        color: $primary
+  .instagram
+    &__link
+      &:hover
+        color: $light
+        &::after
+          height: 3px
+          background-color: $light
+  .control
+    &__button
+      &:hover
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+  .steps
+    &__list
+      &-item
+        &:hover
+          opacity: 1
+          cursor: pointer
+  .footer
+    &__phone
+      &:hover
+        color: $light
+    &__social
+      &-link
+        &:hover
+          box-shadow: 0px 0px 20px rgba($primary, 0.5);
+          background-color: $dark
 
 @media screen and ( max-height: 520px ) and (max-width: 1200px )
   .hero
