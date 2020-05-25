@@ -75,7 +75,7 @@ function fonts(done) {
 };
 
 function imagemin(done) {
-    src("img/**/**")
+    src(["img/**/*.png", "img/**/*.jpg"])
         .pipe(tinypng({key: 'QgTGKsjhgRj5GWmGmSg5rr88WmV5HRdC'}))
         .pipe(dest("dist/img/"));
     src("img/**/*.svg")
