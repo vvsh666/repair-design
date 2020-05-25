@@ -5,6 +5,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const minify = require('gulp-minify');
 const htmlmin = require('gulp-htmlmin');
+const tinypng = require('gulp-tinypng-compress');
 
 // Static server
 function bs() {
@@ -57,7 +58,7 @@ function buildHTML(done) {
         .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(dest("dist/"));
     done();
-}
+};
 
 function php(done) {
     src("**.php")
@@ -65,13 +66,22 @@ function php(done) {
     src("phpmailer/**.**")
         .pipe(dest("dist/phpmailer/"));
     done();
-}
+};
 
 function fonts(done) {
     src("fonts/**/**.**")
         .pipe(dest("dist/fonts/"));
     done();
+};
+
+function imagemin(done) {
+    src("img/**/**")
+        .pipe(tinypng({key: 'QgTGKsjhgRj5GWmGmSg5rr88WmV5HRdC'}))
+        .pipe(dest("dist/img/"));
+    src("img/**/*.svg")
+        .pipe(dest("dist/img/"));
+    done();
 }
 
 exports.serv = bs;
-exports.build = series(buildCSS, buildJS, buildHTML, php, fonts);
+exports.build = series(buildCSS, buildJS, buildHTML, php, fonts, imagemin);
