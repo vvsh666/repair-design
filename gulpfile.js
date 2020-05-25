@@ -53,11 +53,25 @@ function buildJS(done) {
 };
 
 function buildHTML(done) {
-    src("*.html")
+    src("**.html")
         .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(dest("dist/"));
     done();
 }
 
+function php(done) {
+    src("**.php")
+        .pipe(dest("dist/"));
+    src("phpmailer/**.**")
+        .pipe(dest("dist/phpmailer/"));
+    done();
+}
+
+function fonts(done) {
+    src("fonts/**/**.**")
+        .pipe(dest("dist/fonts/"));
+    done();
+}
+
 exports.serv = bs;
-exports.build = series(buildCSS, buildJS, buildHTML);
+exports.build = series(buildCSS, buildJS, buildHTML, php, fonts);
