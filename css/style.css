@@ -459,7 +459,8 @@ input.invalid {
   box-sizing: border-box; }
 
 html {
-  font-size: 14px; }
+  font-size: 14px;
+  scroll-behavior: smooth; }
 
 body {
   font-family: 'Futura Book', sans-serif;

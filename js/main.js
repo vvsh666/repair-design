@@ -349,8 +349,23 @@ $(document).ready(function(){
       }
     });
 
+    // Скрипт запуска карты при скролинге
+    var check_if_load = false;
+    $(document).on('scroll', function() {
+      $('.map').each(function() {
+        var self = $(this),
+        height = self.offset().top + self.height();
+        if ($(document).scrollTop() + windowHeight >= height) {
+          if (!check_if_load) {
+            check_if_load = true;
+            self.append('<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A27ca25ab3deb515b1c2b7cc7484412f2007bd1b149904277f1502e2277d6f211&amp;width=925&amp;height=465&amp;lang=ru_RU&amp;scroll=false"></script>');
+          }
+        } 
+      });
+    });
+
     // Создание Яндекс карты 
-    ymaps.ready(function () {
+   /*  ymaps.ready(function () {
       var myMap = new ymaps.Map('map', {
               center: [47.244729, 39.723187],
               zoom: 15
@@ -383,7 +398,9 @@ $(document).ready(function(){
   
       myMap.geoObjects
           .add(myPlacemark);
-  });
+  }); */
 
 });
+
+
 
