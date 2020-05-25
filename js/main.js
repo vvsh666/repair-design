@@ -146,10 +146,10 @@ $(document).ready(function(){
   next2.css('left', prev.width() + 21 + bullets2.width() + 21);
 
   // Запуск плагина WOW
-  // new WOW().init();
+  new WOW().init();
 
   //Анимация SCC
-/*   var windowHeight = $(window).height();
+  var windowHeight = $(window).height();
 
 
 	$(document).on('scroll', function() {
@@ -174,7 +174,7 @@ $(document).ready(function(){
         self.removeClass('animated');
       }
 		});
-  }); */
+  });
 
   //Валидация формы modal__form
   $('.modal__form').validate({
