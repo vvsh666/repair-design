@@ -13,7 +13,7 @@
 <body>
 
     <!-- Yandex.Metrika counter -->
-  <script type="text/javascript" >
+  <script>
     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
     m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
     (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
@@ -42,7 +42,7 @@
         </nav>
         <div class="contacts menu__contacts">
           <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
-          <button class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
+          <button onclick="ym(64356037,'reachGoal','button');return true;" class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
         </div>
       </div>
     </div>
@@ -182,7 +182,7 @@
             <img src="img/play-icon.svg" alt="Посмотреть видео" class="video__play" loading="lazy">
           </div>
           <p class="control__text line-height-up-down">На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В любой момент вы можете зайти на наш сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию с одного из наших объектов! Оставьте заявку ниже чтобы получить ссылку на трансляцию.</p>
-          <form action="send.php" method="POST" class="form control__form">
+          <form onsubmit="ym(64356037,'reachGoal','control-form'); return true;" action="send.php" method="POST" class="form control__form">
             <div class="input-group control__input-group">
               <label for="user-name-control" class="label form__label control__label">Имя</label>
               <input type="text" name="userName" class="input form__input control__input" id="user-name-control" placeholder="Как вас зовут:">
