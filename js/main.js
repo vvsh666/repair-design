@@ -318,6 +318,57 @@ $(document).ready(function(){
       });
     }
   });
+
+    //Валидация формы measurement__form
+    $('.measurement__form').validate({
+      errorClass: "invalid",
+      errorElement: "div",
+      rules: {
+        userName: {
+          required: true,
+          minlength: 2,
+          maxlength: 15
+        },
+        userPhone: {
+          required: true,
+          minlength: 18
+        },
+        userEmail: {
+          required: true,
+          email: true
+        }
+      },
+      messages: {
+        userName: {
+          required: "Введите Ваше имя",
+          minlength: "Имя не короче двух букв",
+          maxlength: "Имя не длиннее 15 букв"
+        },
+        userPhone: {
+          required: "Телефон обязателен",
+          minlength: "Введены не все цифры"
+        },
+        userEmail: {
+          required: "Обязательно укажите Email",
+          email: "Введите в формате: name@domain.com"
+        }
+      },
+      submitHandler: function(form) {
+        $.ajax({
+          type: "POST",
+          url: "send.php",
+          data: $(form).serialize(),
+          success: function (response) {
+            $(form)[0].reset();
+            modalThanks.toggleClass('modal-thanks--visible');
+          },
+          error: function(response) {
+            console.error('Ошибка запроса ' + response);
+          }        
+        });
+      }
+    });
+  
   
   // Маска для номера телефона
   $('[type=tel]').mask('+7 (000) 000-00-00');
@@ -346,6 +397,15 @@ $(document).ready(function(){
           $('.control__button').attr('disabled', false);
       } else {
           $('.control__button').attr('disabled', true);
+      }
+    });
+
+    //Проверка чекбокса measurement__form
+    $('#policy-checkbox-measurement').on('change', function () {
+      if ( $('#policy-checkbox-measurement').prop('checked') ) {
+          $('.measurement__button').attr('disabled', false);
+      } else {
+          $('.measurement__button').attr('disabled', true);
       }
     });
 
