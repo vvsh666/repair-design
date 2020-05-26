@@ -35,7 +35,7 @@
         <nav class="nav menu__nav">
           <a href="#" class="nav__item">Главная</a>
           <a href="#projects" class="nav__item">ПРоекты</a>
-          <a href="#steps" class="nav__item">Замер</a>
+          <a href="#measurement" class="nav__item">Замер</a>
           <a href="#team" class="nav__item">Команда</a>
           <a href="#customers" class="nav__item">Отзывы</a>
           <a href="#contacts" class="nav__item">Контакты</a>
@@ -271,6 +271,57 @@
       </div>
     </section>
 
+    <section class="section measurement"  id="measurement">
+      <div class="container">
+        <div class="measurement__row">
+
+          <div class="measurement__col-steps">
+            <div class="measurement__image">
+              <img src="img/measurement-bg.png" alt="Здание с этапами" class="measurement__img" loading="lazy">
+            </div>
+            <ul class="measurement__list">
+              <li class="measurement__list-item">Наш специалист приедет для замеров в день контакта или назначит удобную для вас дату</li>
+              <li class="measurement__list-item">Бесплатный замер</li>
+              <li class="measurement__list-item">Бесплатная консультация</li>
+              <li class="measurement__list-item">Получите смету расходов и сроки вашего будущего ремонта</li>
+            </ul>
+          </div>
+
+          <div class="measurement__col-form">
+            <div class="measurement__block-form">
+              <h3 class="measurement__block-title">Оставьте заявку на бесплатный выезд замерщика</h3>
+              <form action="send.php" method="POST" class="form measurement__form">
+                <div class="input-group measurement__input-group">
+                  <label for="user-name-measurement" class="label form__label label--light">Имя</label>
+                  <input type="text" name="userName" class="input form__input measurement__input input--light" id="user-name-measurement" placeholder="Как вас зовут:">
+                </div>
+                <div class="input-group measurement__input-group">
+                  <label for="user-phone-measurement" class="label form__label label--light">Телефон</label>
+                  <input type="tel" name="userPhone" class="input form__input measurement__input input--light" id="user-phone-measurement" placeholder="Ваш телефон:">
+                </div>
+                <div class="input-group measurement__input-group">
+                  <label for="user-email-measurement" class="label form__label label--light">Email</label>
+                  <input type="email" name="userEmail" class="input form__input measurement__input input--light" id="user-email-measurement" placeholder="Ваш email">
+                </div>
+                <div class="policy measurement__policy">
+                  <input type="checkbox" name="policy-checkbox" id="policy-checkbox-measurement" class="policy__checkbox" checked>
+                  <label for="policy-checkbox-measurement" class="policy__label">Я соглашаюсь с обработкой данных</label>
+                </div>
+                <button class="button button--primary measurement__button">Вызвать замерщика</button>
+              </form>
+            </div>
+            <div class="measurement__tag">
+              <div class="measurement__tag-block"><img src="img/pig.svg" alt="Свинка" class="measurement__tag-img"></div>
+              <div class="measurement__tag-text">
+                Это поможет сэкономить 10 - 20% от стоимости материалов
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <section class="section design">
       <div class="container">
         <div class="section-title design__section-title">
@@ -351,7 +402,7 @@
 
     <div class="section section--dark steps">
       <div class="container">
-        <h2 class="steps__title-up" id="steps">как мы работаем</h2>
+        <h2 class="steps__title-up">как мы работаем</h2>
         <div class="steps__row">
           <div class="steps__col-40">
             <div class="steps__title steps__title--left">
@@ -647,7 +698,7 @@
           <nav class="nav menu__nav">
             <a href="#" class="nav__item">Главная</a>
             <a href="#projects" class="nav__item">ПРоекты</a>
-            <a href="#steps" class="nav__item">Замер</a>
+            <a href="#measurement" class="nav__item">Замер</a>
             <a href="#team" class="nav__item">Команда</a>
             <a href="#customers" class="nav__item">Отзывы</a>
             <a href="#contacts" class="nav__item">Контакты</a>

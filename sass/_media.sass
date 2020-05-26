@@ -6,12 +6,38 @@
           width: 30%
         &:nth-child(6)     
           width: 30%
+  .measurement
+    &__col
+      &-steps
+        max-width: 60%
+ 
+      &-form
+        max-width: 40%  
+
 @media screen and ( max-width: 1300px )
   html
     font-size: 13px
   .nav
     &__item
       margin-right: 2rem
+  .measurement
+    &__col
+      &-steps
+        max-width: 64%
+      &-form
+        max-width: 36%
+    &__tag
+      justify-content: space-between
+      &-block
+        max-width: 4rem
+        max-height: 4rem
+        margin-left: 0
+      &-img
+        max-width: 60%
+      &-text
+        font-size: 1.1rem
+        
+      
   
 @media screen and ( max-width: 1200px )
   html
@@ -22,6 +48,17 @@
   .projects
     &__col-40
       padding-left: 0
+  .measurement
+    &__col
+      &-steps
+        max-width: 68%
+      &-form
+        max-width: 32%
+    &__block
+      &-title
+        font-size: 1.2rem
+    &__button
+      margin: 0 auto
   .team
     &__card
       margin-left: 2.5rem
@@ -54,6 +91,8 @@
     &__col-60
       max-width: 100%
       align-self: center
+  .measurement
+    display: none
   .team
     &__card
       &-text
