@@ -460,6 +460,26 @@ $(document).ready(function(){
           .add(myPlacemark);
   }); */
 
+  // Загрузка видео с YouTobe
+
+  var player;
+
+  $('.video__play').on('click', function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      height: '434',
+      width: '100%',
+      videoId: 'RHzzLqJWqHs',
+      events: {
+        'onReady': videoPlay,
+      }
+    });
+  }
+)
+
+function videoPlay(event) {
+  event.target.playVideo();
+}
+
 });
 
 
