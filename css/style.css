@@ -2066,7 +2066,7 @@ img {
     padding-bottom: 1rem; }
     .hero__text {
       max-width: 26.75rem;
-      width: 93%;
+      width: 94%;
       font-size: 1.5rem; }
     .hero__scroll-down {
       display: none; }
@@ -2101,6 +2101,10 @@ img {
   .projects {
     padding-top: 3rem;
     padding-bottom: 0.5rem; }
+    .projects__col-60 {
+      -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+      align-self: flex-start; }
     .projects__title {
       margin-bottom: 3.1rem; }
     .projects__heading {
