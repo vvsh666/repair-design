@@ -453,6 +453,9 @@
     &__button
       &:hover
         box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+  .video
+    &__play
+      cursor: pointer
   .steps
     &__list
       &-item
@@ -525,6 +528,25 @@
     &__dialog
       overflow-y: scroll
       height: 300px
-    
+
+@media screen and ( max-width: 992px ) and ( min-width: 570px)
+  .projects
+    &__col-40
+      margin-left: auto
+      margin-right: auto
+    &__heading
+      text-align: center
+    &__word
+      display: block
+      &::after
+        display: none
+    &__text
+      text-align: center
+    .swiper
+      &-container-1
+        margin-left: 5rem
+        &__image
+          margin-left: auto
+
 
   
