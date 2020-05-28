@@ -962,8 +962,7 @@ img {
     font-size: 60%; }
 
 .measurement {
-  padding-top: 6.4rem;
-  padding-bottom: 17rem; }
+  padding-top: 6.4rem; }
   .measurement__row {
     display: -webkit-box;
     display: -webkit-flex;
