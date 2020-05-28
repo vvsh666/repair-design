@@ -392,31 +392,32 @@ template {
     -ms-flex-direction: column;
     flex-direction: column; }
 
-.policy__checkbox {
-  opacity: 0;
-  visibility: hidden; }
-  .policy__checkbox:checked + .policy__label::before {
-    background: #E3B873 url("../img/check.svg") no-repeat center/0.8rem; }
-
-.policy__label {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  color: #ffffff;
-  font-size: 1.143rem; }
-  .policy__label::before {
-    content: '';
-    width: 18px;
-    height: 18px;
-    border: 1px solid #E3B873;
-    border-radius: 1px;
-    cursor: pointer;
-    margin-right: 0.64rem; }
+.policy {
+  position: relative; }
+  .policy__checkbox {
+    opacity: 0;
+    visibility: hidden; }
+    .policy__checkbox:checked + .policy__label::before {
+      background: #E3B873 url("../img/check.svg") no-repeat center/0.8rem; }
+  .policy__label {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 1.143rem; }
+    .policy__label::before {
+      content: '';
+      width: 18px;
+      height: 18px;
+      border: 1px solid #E3B873;
+      border-radius: 1px;
+      cursor: pointer;
+      margin-right: 0.64rem; }
 
 div.invalid {
   position: absolute;
@@ -426,6 +427,13 @@ div.invalid {
 
 input.invalid {
   border-bottom: 1px solid tomato; }
+
+.checkbox-error {
+  display: block;
+  position: absolute;
+  color: tomato; }
+  .checkbox-error--unvisible {
+    display: none; }
 
 .container {
   width: 85%;
@@ -464,6 +472,9 @@ body {
 img {
   max-width: 100%; }
 
+h1, h2, h3, h4, h5 {
+  font-weight: 400; }
+
 .section {
   padding: 60px 0; }
   .section--dark {
@@ -472,7 +483,8 @@ img {
   .section-title {
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Yeseva One', cursive; }
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400; }
     .section-title--light {
       color: #ffffff; }
     .section-title__heading {
@@ -637,6 +649,7 @@ img {
     background-color: #131313;
     font-size: 0.857rem;
     font-family: 'Yeseva One', cursive;
+    font-weight: 400;
     text-transform: uppercase;
     text-decoration: none;
     color: #ffffff; }
@@ -690,6 +703,7 @@ img {
 .title {
   margin: 0;
   font-family: 'Yeseva One', cursive;
+  font-weight: 400;
   text-transform: uppercase;
   font-size: 2.857rem;
   line-height: 1.325; }
@@ -724,6 +738,7 @@ img {
   .projects__heading {
     margin: 0;
     font-family: 'Yeseva One', cursive;
+    font-weight: 400;
     text-transform: uppercase;
     font-size: 1.93rem;
     line-height: 1.38;
@@ -773,6 +788,7 @@ img {
       font-size: 1.286rem;
       line-height: 1.39;
       font-family: 'Yeseva One', cursive;
+      font-weight: 400;
       text-transform: uppercase;
       color: #E3B873;
       margin-bottom: 0.4rem; }
@@ -911,6 +927,8 @@ img {
   .control__button {
     font-size: 1.07rem;
     padding: 1.2rem 4.4rem; }
+  .control__checkbox-error {
+    left: 42%; }
 
 .video__play {
   position: relative;
@@ -934,6 +952,7 @@ img {
   margin-top: 0;
   margin-bottom: 0.6rem;
   font-family: 'Yeseva One', cursive;
+  font-weight: 400;
   font-size: 1.29rem; }
 
 .card__list {
@@ -951,6 +970,7 @@ img {
   width: 16.29rem;
   font-size: 1.29rem;
   font-family: 'Yeseva One', cursive;
+  font-weight: 400;
   text-transform: uppercase;
   text-align: center;
   background-color: #E3B873;
@@ -1128,6 +1148,7 @@ img {
   .steps__heading {
     margin: 0;
     font-family: 'Yeseva One', cursive;
+    font-weight: 400;
     text-transform: uppercase;
     font-size: 1.93rem;
     line-height: 1.38;
@@ -1151,6 +1172,7 @@ img {
       margin-left: 6rem; }
   .steps__counter {
     font-family: 'Yeseva One', cursive;
+    font-weight: 400;
     font-size: 18px;
     line-height: 25px;
     text-transform: uppercase;
@@ -1168,6 +1190,7 @@ img {
     margin: 0;
     margin-bottom: 0.85rem;
     font-family: 'Yeseva One', cursive;
+    font-weight: 400;
     font-size: 1.07rem;
     line-height: 1.53;
     text-transform: uppercase;
@@ -1209,6 +1232,7 @@ img {
         opacity: 1; }
     .steps__list-title {
       font-family: 'Yeseva One', cursive;
+      font-weight: 400;
       font-size: 1.07rem;
       line-height: 1.4;
       text-transform: uppercase;
@@ -1306,6 +1330,7 @@ img {
     margin: 0;
     margin-bottom: 0.64rem;
     font-family: 'Yeseva One', cursive;
+    font-weight: 400;
     font-size: 1.29rem;
     line-height: 1.39rem; }
   .team__subtitle {
@@ -1321,7 +1346,7 @@ img {
     text-align: center;
     text-transform: uppercase;
     font-family: 'Yeseva One', cursive;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 0.93rem;
     line-height: 1.44rem; }
   .team__text {
@@ -1398,6 +1423,7 @@ img {
       margin-left: 1.7rem;
       max-width: 14rem;
       font-family: 'Yeseva One', cursive;
+      font-weight: 400;
       font-size: 1.3rem;
       line-height: 1.28; }
   .customers__text {
@@ -1422,6 +1448,7 @@ img {
     background-color: #E3B873;
     color: #ffffff;
     font-family: 'Yeseva One', cursive;
+    font-weight: 400;
     font-size: 1.21rem;
     line-height: 1.4;
     text-transform: uppercase;
@@ -1518,6 +1545,7 @@ img {
     margin: 0;
     margin-bottom: 2rem;
     font-family: 'Yeseva One', cursive;
+    font-weight: 400;
     font-size: 1.357rem;
     line-height: 1.37;
     text-align: center;
@@ -1539,7 +1567,13 @@ img {
       .modal__input-group:nth-of-type(3) {
         margin-bottom: 0.08rem; }
   .modal__policy {
+    position: relative;
     margin-bottom: 2.78rem; }
+    .modal__policy > div.invalid {
+      position: absolute;
+      top: 2.5rem;
+      left: 0;
+      color: tomato; }
   .modal__button {
     -webkit-align-self: flex-end;
     -ms-flex-item-align: end;
@@ -1597,6 +1631,7 @@ img {
       margin: 0;
       margin-bottom: 2rem;
       font-family: 'Yeseva One', cursive;
+      font-weight: 400;
       font-size: 1.357rem;
       line-height: 1.37;
       text-align: center;
@@ -1637,8 +1672,7 @@ img {
     font-family: 'Yeseva One', cursive;
     font-size: 1.43rem;
     line-height: 1.4;
-    font-weight: normal;
-    font-style: normal;
+    font-weight: 400;
     text-align: center;
     margin: 0;
     margin-bottom: 3.1rem; }
@@ -1713,6 +1747,7 @@ img {
     margin: auto;
     margin-bottom: 1.55rem;
     font-family: 'Yeseva One', cursive;
+    font-weight: 400;
     font-size: 1.43rem;
     line-height: 1.4;
     text-align: center;
@@ -1777,6 +1812,8 @@ img {
   .footer__menu {
     padding: 3.3rem 0;
     background: #131313; }
+  .footer__checkbox-error {
+    left: 37%; }
 
 .ymaps-2-1-76-ground-pane {
   -webkit-filter: grayscale(1);
@@ -2197,6 +2234,8 @@ img {
       -ms-flex-order: 4;
       order: 4;
       font-size: 1.25rem; }
+    .control__checkbox-error {
+      left: 0; }
   .video__play {
     width: 64px;
     width: 64px; }
@@ -2271,7 +2310,9 @@ img {
     .footer__social-link:nth-of-type(2) {
       background: #E3B873 url("../img/instagram-icon.svg") no-repeat center/19px; }
   .footer__menu {
-    display: none; } }
+    display: none; }
+  .footer__checkbox-error {
+    left: 0; } }
 
 @media screen and (min-width: 992px) {
   .button:hover {

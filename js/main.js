@@ -193,12 +193,12 @@ $(document).ready(function(){
       userEmail: {
         required: true,
         email: true
-      }
+      },
     },
     messages: {
       userName: {
-        required: "Пожалуйста, введите Ваше имя",
-        minlength: "Имя не короче двух букв",
+        required: "Введите имя",
+        minlength: "Имя не короче 2 букв",
         maxlength: "Имя не длиннее 15 букв"
       },
       userPhone: {
@@ -208,7 +208,7 @@ $(document).ready(function(){
       userEmail: {
         required: "Обязательно укажите Email",
         email: "Введите в формате: name@domain.com"
-      }
+      },
     },
     submitHandler: function(form) {
       $.ajax({
@@ -248,8 +248,8 @@ $(document).ready(function(){
     },
     messages: {
       userName: {
-        required: "Пожалуйста, введите Ваше имя",
-        minlength: "Имя не короче двух букв",
+        required: "Введите имя",
+        minlength: "Имя не короче 2 букв",
         maxlength: "Имя не длиннее 15 букв"
       },
       userPhone: {
@@ -294,8 +294,8 @@ $(document).ready(function(){
     },
     messages: {
       userName: {
-        required: "Пожалуйста, введите Ваше имя",
-        minlength: "Имя не короче двух букв",
+        required: "Введите имя",
+        minlength: "Имя не короче 2 букв",
         maxlength: "Имя не длиннее 15 букв"
       },
       userPhone: {
@@ -340,8 +340,8 @@ $(document).ready(function(){
       },
       messages: {
         userName: {
-          required: "Введите Ваше имя",
-          minlength: "Имя не короче двух букв",
+          required: "Введите имя",
+          minlength: "Имя не короче 2 букв",
           maxlength: "Имя не длиннее 15 букв"
         },
         userPhone: {
@@ -377,8 +377,10 @@ $(document).ready(function(){
   $('#policy-checkbox').on('change', function () {
     if ( $('#policy-checkbox').prop('checked') ) {
         $('.modal__button').attr('disabled', false);
+        $('.modal__checkbox-error').addClass('checkbox-error--unvisible');  
     } else {
         $('.modal__button').attr('disabled', true);
+        $('.modal__checkbox-error').removeClass('checkbox-error--unvisible');
     }
   });
 
@@ -386,8 +388,10 @@ $(document).ready(function(){
     $('#policy-checkbox-footer').on('change', function () {
       if ( $('#policy-checkbox-footer').prop('checked') ) {
           $('.footer__button').attr('disabled', false);
+          $('.footer__checkbox-error').addClass('checkbox-error--unvisible');
       } else {
           $('.footer__button').attr('disabled', true);
+          $('.footer__checkbox-error').removeClass('checkbox-error--unvisible');
       }
     });
 
@@ -395,17 +399,21 @@ $(document).ready(function(){
     $('#policy-checkbox-control').on('change', function () {
       if ( $('#policy-checkbox-control').prop('checked') ) {
           $('.control__button').attr('disabled', false);
+          $('.control__checkbox-error').addClass('checkbox-error--unvisible');         
       } else {
           $('.control__button').attr('disabled', true);
-      }
+          $('.control__checkbox-error').removeClass('checkbox-error--unvisible');
+        }
     });
 
     //Проверка чекбокса measurement__form
     $('#policy-checkbox-measurement').on('change', function () {
       if ( $('#policy-checkbox-measurement').prop('checked') ) {
           $('.measurement__button').attr('disabled', false);
+          $('.measurement__checkbox-error').addClass('checkbox-error--unvisible'); 
       } else {
           $('.measurement__button').attr('disabled', true);
+          $('.measurement__checkbox-error').removeClass('checkbox-error--unvisible');
       }
     });
 
