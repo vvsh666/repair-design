@@ -369,7 +369,8 @@ template {
   border-bottom: 1px solid rgba(54, 54, 54, 0.3);
   font-size: 1.285rem;
   color: #ffffff;
-  padding: 0.485rem 0; }
+  padding: 0.485rem 0;
+  outline: none; }
   .input--light::-webkit-input-placeholder {
     color: #ffffff; }
   .input--light::-moz-placeholder {
@@ -1044,10 +1045,12 @@ h1, h2, h3, h4, h5 {
   .measurement__form {
     max-width: 29.14rem;
     margin: 0 auto; }
-  .measurement__input-group {
-    margin-bottom: 3.35rem; }
-    .measurement__input-group:nth-child(3) {
-      margin-bottom: 0; }
+  .measurement__input {
+    outline: none; }
+    .measurement__input-group {
+      margin-bottom: 3.35rem; }
+      .measurement__input-group:nth-child(3) {
+        margin-bottom: 0; }
   .measurement__policy {
     margin-bottom: 2.75rem; }
   .measurement__button {
@@ -1702,6 +1705,7 @@ h1, h2, h3, h4, h5 {
       -ms-flex-pack: center;
       justify-content: center; }
   .footer__input {
+    outline: none;
     padding-top: 0.4rem; }
     .footer__input-group {
       -webkit-flex-basis: 44.5%;
